@@ -1,0 +1,34 @@
+.form-control {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.form-control-item {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.form-control-item label {
+  padding: 5px 10px;
+  width: 100px;
+}
+.form-control-item input {
+  flex: 1;
+  padding: 0 10px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #00695c;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 200px;
+  margin-top: 20px;
+}
