@@ -8,7 +8,11 @@
             <div class="user-message user-message__error"><%= errorMessage %></div>
         <%}%>
         <main>        
-            <form class="form-control" method="POST" action="/login">
+            <form class="form-control" method="POST" action="/signup">
+                <div class="form-control-item">
+                    <label for="userName">Name</label>
+                    <input type="text" id="userName" placeholder="User Name" name="name"></input>
+                </div>
                 <div class="form-control-item">
                     <label for="email">Your Email</label>
                     <input type="email" id="email" placeholder="Your Email" name="email"></input>
@@ -17,7 +21,7 @@
                     <label for="password">Password</label>
                     <input type="password" id="password" placeholder="Password" name="password"></input>
                 </div>
-                <button type="submit">Login</button>
+                <button type="submit">Sign Up</button>
             </form>           
         </main>
         <%- include('../includes/end.ejs') %>
